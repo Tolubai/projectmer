@@ -1,0 +1,58 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "projectmer"
+  },
+  "apps": [
+    {
+      "root": "resources/assets/src",
+      "outDir": "public/dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "viewInclude": "resources/views/welcome.blade.php",
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "../../assets/src/assets/scss/bootstrap.scss",
+        "../../assets/src/assets/scss/style.scss"
+      ],
+      "scripts": [
+        "../../../node_modules/jquery/dist/jquery.js",
+        "../../../node_modules/datatables.net/js/jquery.dataTables.js",
+        "../../assets/src/assets/js/bootstrap.bundle.js",
+        "../../assets/src/assets/js/fontawesome-all.min.js",
+        "../../assets/src/assets/js/scripts.js",
+        "../../assets/src/assets/js/slick.min.js"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "lint": [
+    {
+      "project": "resources/assets/src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    }
+  ],
+  "defaults": {
+    "styleExt": "scss",
+    "component": {},
+    "spec": {
+    "class": false,
+    "component": false,
+    "directives": false,
+    "module": false,
+    "service": false
+    }
+  }
+}

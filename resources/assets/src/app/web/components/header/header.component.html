@@ -1,0 +1,66 @@
+<header class="header headerinner">
+  <nav class="navbar navbar-expand-lg navbar-top">
+    <div class="container">
+      <nav class="nav navbar-social">
+        <a class="nav-link fb" href="#">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a class="nav-link in" href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a class="nav-link yt" href="#">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </nav>
+
+      <ul class="navbar-nav ml-auto top-menu">
+        <li class="nav-item nav-version">
+          <a class="nav-link" href="#">Версия для слабовидящих</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Русский</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">English</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="line"></div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-bottom">
+    <div class="container">
+      <a class="navbar-brand" [routerLink]="['/']">
+        <img src="../dist/assets/img/logo-mini.png" class="d-inline-block">
+        <div class="d-inline-block navbar-brand-text">Официальный сайт мэрии города Бишкек</div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/bashkaruu']" >История города</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Мэрия</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Услуги</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Пресс-служба</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>

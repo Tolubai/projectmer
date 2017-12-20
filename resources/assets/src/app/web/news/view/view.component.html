@@ -1,0 +1,52 @@
+<section id="section" class="section article clean">
+  <div class="container" *ngIf="post">
+    <div class="row">
+      <div class="col-sm-9">
+        <figure class="article-figure">
+          <img src="{{post.thumbnailM}}" class="figure-img img-fluid" alt="Описание картинки">
+          <div class="article-info">
+              <span class="text-left align-self-center">19 Декабрь 2017</span>
+              <span class="article-info-cat">Транспорт</span>
+              <!-- <figcaption class="figure-caption float-right">{{post.thumbdescRu}}</figcaption> -->
+          </div>
+        </figure>
+        <div class="article-title">
+          <h5>{{post.titleRu}}</h5>
+        </div>
+
+        <div class="article-body">
+          <article [innerHTML]="post.contentRu"></article>
+        </div>
+        <div class="article-footer">
+          <div class="row">
+            <div class="col">
+              <div class="footer-bottom">
+                <div class="float-left d-flex" style="height: 40px">
+                  <div class="share align-self-center">
+                    <share-buttons [theme]="'outline'" [include]="['facebook','twitter','google','whatsapp','telegram','vk']" [show]="14"
+                      [showIcon]="false" [showText]="true">
+                    </share-buttons>
+                  </div>
+                </div>         
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <aside class="sidebar">
+          <div class="sidebar-title">
+            <h6>Сайдбар</h6>
+          </div>
+          <div class="sidebar-body">
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>

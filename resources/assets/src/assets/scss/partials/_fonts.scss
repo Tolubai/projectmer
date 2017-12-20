@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat/montserrat-v12-latin_cyrillic-ext-regular.woff2'),
+         url('../fonts/montserrat/montserrat-v12-latin_cyrillic-ext-regular.woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('../fonts/montserrat/montserrat-v12-latin_cyrillic-ext-500.woff2'),
+         url('../fonts/montserrat/montserrat-v12-latin_cyrillic-ext-500.woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../fonts/montserrat/montserrat-v12-latin_cyrillic-ext-700.woff2'),
+         url('../fonts/montserrat/montserrat-v12-latin_cyrillic-ext-700.woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'fira_sansmedium';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/firasans/firasans-medium.eot');
+  src: url('../fonts/firasans/firasans-medium.eot?#iefix'), 
+    url('../fonts/firasans/firasans-medium.woff2'), 
+    url('../fonts/firasans/firasans-medium.woff'), 
+    url('../fonts/firasans/firasans-medium.ttf'), 
+    url('../fonts/firasans/firasans-medium.svg#fira_sansmedium');
+}
+
+@font-face {
+  font-family: 'fira_sansregular';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/firasans/firasans-regular.eot');
+  src: url('../fonts/firasans/firasans-regular.eot?#iefix'), 
+    url('../fonts/firasans/firasans-regular.woff2'), 
+    url('../fonts/firasans/firasans-regular.woff'), 
+    url('../fonts/firasans/firasans-regular.ttf'), 
+    url('../fonts/firasans/firasans-regular.svg#fira_sansregular');
+}
+
+
+// Montserrat
+
+$montserratregular: 'montserratregular', Arial, sans-serif;
+$montserratmedium: 'montserratmedium', Arial, sans-serif;
+$montserratbold: 'montserratbold', Arial, sans-serif;
+
+// Firasans
+
+$firasansregular: 'fira_sansregular', Arial, sans-serif;
+$firasansmedium: 'fira_sansmedium', Arial, sans-serif;

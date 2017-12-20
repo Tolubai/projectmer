@@ -1,0 +1,138 @@
+<section id="section" class="section newservice clean">
+  <div class="container">
+    <div class="section-title">
+      <h5>Все новости</h5>
+    </div>
+    <div class="section-body">
+      <div class="row" *ngIf="posts.length">
+        <div class="col-md-4 col-sm-12" *ngFor="let post of posts">
+          <div class="card">
+            <img class="card-img-top" src="{{post.thumbnailS}}" alt="">
+            <div class="card-body">
+              <div class="media">
+                <div class="media-left mr-3">
+                  <span class="m-top">{{ post.created_at | date : "d" }}</span>
+                  <span class="m-bottom">{{ post.created_at | date : "MMMM" }}</span>
+                </div>
+                <div class="media-body">
+                  <h6 class="card-title">
+                    <a [routerLink]="['/news', post.id]">{{post.titleRu}}</a>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12">
+          <div class="card">
+            <img class="card-img-top" src="../assets/img/home/1.png" alt="">
+            <div class="card-body">
+              <div class="media">
+                <div class="media-left mr-3">
+                  <span class="m-top">20</span>
+                  <span class="m-bottom">ноября</span>
+                </div>
+                <div class="media-body">
+                  <h6 class="card-title">
+                    <a href="#">В МП «Зеленстрой» появилась техника для очистки ЗКДС</a>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="card">
+            <img class="card-img-top" src="../assets/img/home/2.png" alt="">
+            <div class="card-body">
+              <div class="media">
+                <div class="media-left mr-3">
+                  <span class="m-top">20</span>
+                  <span class="m-bottom">ноября</span>
+                </div>
+                <div class="media-body">
+                  <h6 class="card-title">
+                    <a href="#">Столичные школьники встретились с династией милиционеров в рамках проекта «Жаш карек»</a>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="card">
+            <img class="card-img-top" src="../assets/img/home/3.png" alt="">
+            <div class="card-body">
+              <div class="media">
+                <div class="media-left mr-3">
+                  <span class="m-top">20</span>
+                  <span class="m-bottom">ноября</span>
+                </div>
+                <div class="media-body">
+                  <h6 class="card-title">
+                    <a href="#">Мэр столицы Албек Ибраимов совершил объезд по строящимся объектам</a>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="card">
+            <img class="card-img-top" src="../assets/img/home/1.png" alt="">
+            <div class="card-body">
+              <div class="media">
+                <div class="media-left mr-3">
+                  <span class="m-top">20</span>
+                  <span class="m-bottom">ноября</span>
+                </div>
+                <div class="media-body">
+                  <h6 class="card-title">
+                    <a href="#">В МП «Зеленстрой» появилась техника для очистки ЗКДС</a>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="card">
+            <img class="card-img-top" src="../assets/img/home/2.png" alt="">
+            <div class="card-body">
+              <div class="media">
+                <div class="media-left mr-3">
+                  <span class="m-top">20</span>
+                  <span class="m-bottom">ноября</span>
+                </div>
+                <div class="media-body">
+                  <h6 class="card-title">
+                    <a href="#">Столичные школьники встретились с династией милиционеров в рамках проекта «Жаш карек»</a>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="card">
+            <img class="card-img-top" src="../assets/img/home/3.png" alt="">
+            <div class="card-body">
+              <div class="media">
+                <div class="media-left mr-3">
+                  <span class="m-top">20</span>
+                  <span class="m-bottom">ноября</span>
+                </div>
+                <div class="media-body">
+                  <h6 class="card-title">
+                    <a href="#">Мэр столицы Албек Ибраимов совершил объезд по строящимся объектам</a>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
