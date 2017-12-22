@@ -1073,15 +1073,71 @@ video {
     font-family: $montserratmedium;
     .page-item{
         border:none;
+        // box-shadow: $shadow;
+
+        &.active{
+            .page-link{
+                background: $link !important;
+                color: white !important;
+            }
+        }
         
         .page-link{
-          border:none;
+            border:none;
+            padding: 10px 15px;
+
+            &:hover{
+                background: $link !important;
+                color: white !important;
+            }
            
         }
 
-        &:last-child .page-link{
-            background: none;
+        &:first-child .page-link{
+            background: white;
             color: $link;
+            border-radius: 50%;
+            box-shadow: $shadow;
+            margin-right: 15px;
+        }
+        &:last-child .page-link{
+            background: white;
+            color: $link;
+            border-radius: 50%;
+            box-shadow: $shadow;
+            margin-left: 15px;
+        }
+
+        &:nth-child(3) .page-link,
+        &:nth-child(4) .page-link,
+        &:nth-child(5) .page-link,
+        &:nth-child(6) .page-link,
+        &:nth-child(7) .page-link
+        {
+            background: white;
+            color: $link;
+            // border-radius: 50%;
+            box-shadow: 0px 3px 2px 0px rgba(69, 101, 173, 0.1);
+            z-index: 3;
+            width: 40px;
+        }
+
+        &:nth-child(2) .page-link
+        {
+            background: white;
+            color: $link;
+            border-radius: 50% 0 0 50%;
+            box-shadow: $shadow;
+            z-index: 2;
+        }
+        &:nth-child(8) .page-link
+        {
+            background: white;
+            color: $link;
+            border-radius: 0 50% 50% 0;
+            box-shadow: $shadow;
+            z-index: 2;
+
         }
     }
 } 

@@ -21,13 +21,13 @@
       "prefix": "app",
       "styles": [
         "../../assets/src/assets/scss/bootstrap.scss",
-        "../../assets/src/assets/scss/style.scss"
+        "../../assets/src/assets/scss/style.scss",
+        "../../assets/src/assets/scss/fontawesome.scss"
       ],
       "scripts": [
         "../../../node_modules/jquery/dist/jquery.js",
         "../../../node_modules/datatables.net/js/jquery.dataTables.js",
         "../../assets/src/assets/js/bootstrap.bundle.js",
-        "../../assets/src/assets/js/fontawesome-all.min.js",
         "../../assets/src/assets/js/scripts.js",
         "../../assets/src/assets/js/slick.min.js"
       ],

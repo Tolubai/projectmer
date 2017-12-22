@@ -13,6 +13,7 @@
 
         <div class="article-body">
           <article>
+            <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
             <p>Одним из ярких новогодних мероприятий нашей столицы обещает стать шествие Дедов Морозов и Снегурочек, которое
               проходит cегодня. Глава столичного муниципалитета Иса Омуркулов в своем приветственном слове отметил, что Дед
               Мороз и Снегурочка являются основными символами Нового Года!&nbsp;</p>
@@ -38,7 +39,6 @@
               детям и взрослым.
               <br> На различные сладкие подарки в 2010 году с горбюджета было выделено 2,5 млн. сомов, всего же на празднование
               самого волшебного праздника - Нового года мэрия города Бишкек выделила порядка 10 млн. сомов.
-              <br> &nbsp;
             </p>
           </article>
         </div>
@@ -47,8 +47,8 @@
             <div class="col">
               <div class="footer-bottom">
                 <div class="share">
-                  <share-buttons [theme]="'outline'" [include]="['facebook','twitter','google','whatsapp','telegram','vk']" [show]="14" [showIcon]="false"
-                    [showText]="true">
+                  <share-buttons [theme]="'outline'" [include]="['facebook','twitter','google','vk', 'whatsapp','telegram']" [show]="6" [showIcon]="false"
+                    [showText]="true" [showCount]="true" [title]="" [description]="" [image]="">
                   </share-buttons>
                 </div>
               </div>

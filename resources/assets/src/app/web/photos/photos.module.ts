@@ -6,6 +6,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { ShareButtonsModule } from '@ngx-share/buttons';
 
+import { NgxGalleryModule } from 'ngx-gallery';
+
 import { PhotosComponent } from './photos.component';
 import { PhotosRoutingModule } from './photos.routing';
 import { ViewComponent } from './view/view.component';
@@ -16,6 +18,7 @@ import { ViewComponent } from './view/view.component';
     RouterModule,
     PhotosRoutingModule,
     FormsModule,
+    NgxGalleryModule,
     HttpClientModule,       // for share counts
     HttpClientJsonpModule,  // for linkedin and tumblr share counts
     ShareButtonsModule.forRoot()
