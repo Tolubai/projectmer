@@ -1,0 +1,159 @@
+$blacknew:#000;
+$yellownew:#f1ff14;
+
+.version{
+    background: $blacknew !important;
+    color: $yellownew !important;
+
+    .nav-link, 
+    .navbar-brand-text,
+    .navmiddle,
+    {
+        background: $blacknew !important;
+        color: $yellownew !important;
+        
+        a, h5{
+            color: $yellownew !important;
+            
+            &:link,
+            &:hover,
+            &:focus,
+            &:active{
+                
+                color: $yellownew !important;
+            }
+        }
+    }
+    
+    a, h5{
+        color: $yellownew !important;
+        
+        &:link,
+        &:hover,
+        &:focus,
+        &:active{
+            
+            color: $yellownew !important;
+        }
+    }
+    
+
+ 
+
+    .newservice-service{
+
+        .card-title{
+            background: $yellownew !important;
+            color: $blacknew !important; 
+            padding: 10px;
+
+        }
+    }
+
+    .card .media-left span.m-bottom{
+        color: $blacknew !important;
+    }
+    .card .media-left span.m-top{
+        border: 1px solid $blacknew !important;
+        color: $blacknew !important;
+    }
+
+
+
+    .line{
+        background: $yellownew;
+    }
+    .navmiddle{
+        border: 1px solid $yellownew;
+    }
+
+
+    .tab-content {
+        background: $yellownew !important;
+
+        .card{
+            border: 1px solid $blacknew !important;
+        }
+        .card-title{
+            left: 0 !important;
+            right: 0 !important;
+            bottom: 0 !important;
+            background: $yellownew;
+            margin: 0;
+            padding: 15px;
+    
+            a{
+                color: $blacknew !important;
+            }
+        }
+        .card-date{
+            left: 0 !important;
+            right: 0 !important;
+            top: 0 !important;
+            background: $yellownew;
+            margin: 0;
+            padding: 10px;
+            color: $blacknew !important;
+    
+            a{
+                color: $blacknew !important;
+            }
+        }
+
+        .card-footer .card-all{
+            a{
+                color: $blacknew !important;
+            }
+        }
+    }
+
+
+    .newservice-news  .card-body{
+        background: $yellownew !important;
+    
+        a{
+            color: $blacknew !important;
+        }
+    }
+    
+    .footer{
+        border-top: 1px solid $yellownew !important;
+    }
+    
+    .mayor{
+        .card{
+
+            background: none;
+    
+            &-title{
+                background: $blacknew !important;
+            }
+        }
+    }
+
+    .arrow-prev, .arrow-next{
+        color: $yellownew !important;
+    }
+
+    .media{
+        border: 1px solid $yellownew !important;
+
+        &-title{
+            color: $yellownew !important;
+        }
+    }
+
+    .navmiddle > li:hover{
+        background: $blacknew
+    }
+
+    .navmiddle > li > .fulldrop{
+        background: $blacknew;
+        border: 1px solid $yellownew;
+    }
+
+}
+
+.footer.version{
+    border-top: 1px solid $yellownew;
+}

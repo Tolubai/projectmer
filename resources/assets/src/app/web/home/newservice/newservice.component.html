@@ -10,7 +10,7 @@
           <div class="newservice-news-slide">
             <div class="col-md-4 col-sm-12">
               <div class="card">
-                <img class="card-img-top" src="../dist/assets/img/home/1.png" alt="">
+                <img class="card-img-top" src="../dist/assets/img/posts/4.png" alt="">
                 <div class="card-body">
                   <div class="media">
                     <div class="media-left mr-3">
@@ -19,7 +19,7 @@
                     </div>
                     <div class="media-body">
                       <h6 class="card-title">
-                        <a href="#">В МП «Зеленстрой» появилась техника для очистки ЗКДС</a>
+                        <a [routerLink]="['/news/4']">Квартиры для участников ВОВ</a>
                       </h6>
                     </div>
                   </div>
@@ -28,7 +28,7 @@
             </div>
             <div class="col-md-4 col-sm-12">
               <div class="card">
-                <img class="card-img-top" src="../dist/assets/img/home/2.png" alt="">
+                <img class="card-img-top" src="../dist/assets/img/posts/1.png" alt="">
                 <div class="card-body">
                   <div class="media">
                     <div class="media-left mr-3">
@@ -37,7 +37,26 @@
                     </div>
                     <div class="media-body">
                       <h6 class="card-title">
-                        <a href="#">Столичные школьники встретились с династией милиционеров в рамках проекта «Жаш карек»</a>
+                        <a [routerLink]="['/news/1']">В столице Кыргызстана проходит новогоднее шествие Дед Морозов и Снегурочек</a>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+              <div class="card">
+                <img class="card-img-top" src="../dist/assets/img/posts/3.png" alt="">
+                <div class="card-body">
+                  <div class="media">
+                    <div class="media-left mr-3">
+                      <span class="m-top">20</span>
+                      <span class="m-bottom">ноября</span>
+                    </div>
+                    <div class="media-body">
+                      <h6 class="card-title">
+                        <a [routerLink]="['/news/3']">Иса Омуркулов вручил ветеранам ВОВ ключи от однокомнатных квартир в центре Бишкека</a>
                       </h6>
                     </div>
                   </div>
@@ -46,7 +65,7 @@
             </div>
             <div class="col-md-4 col-sm-12">
               <div class="card">
-                <img class="card-img-top" src="../dist/assets/img/home/3.png" alt="">
+                <img class="card-img-top" src="../dist/assets/img/posts/2.png" alt="">
                 <div class="card-body">
                   <div class="media">
                     <div class="media-left mr-3">
@@ -55,74 +74,22 @@
                     </div>
                     <div class="media-body">
                       <h6 class="card-title">
-                        <a href="#">Мэр столицы Албек Ибраимов совершил объезд по строящимся объектам</a>
+                        <a [routerLink]="['/news/2']">Праздничное шествие дедов морозов</a>
                       </h6>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="card">
-                <img class="card-img-top" src="../dist/assets/img/home/1.png" alt="">
-                <div class="card-body">
-                  <div class="media">
-                    <div class="media-left mr-3">
-                      <span class="m-top">20</span>
-                      <span class="m-bottom">ноября</span>
-                    </div>
-                    <div class="media-body">
-                      <h6 class="card-title">
-                        <a href="#">В МП «Зеленстрой» появилась техника для очистки ЗКДС</a>
-                      </h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="card">
-                <img class="card-img-top" src="../dist/assets/img/home/2.png" alt="">
-                <div class="card-body">
-                  <div class="media">
-                    <div class="media-left mr-3">
-                      <span class="m-top">20</span>
-                      <span class="m-bottom">ноября</span>
-                    </div>
-                    <div class="media-body">
-                      <h6 class="card-title">
-                        <a href="#">Столичные школьники встретились с династией милиционеров в рамках проекта «Жаш карек»</a>
-                      </h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="card">
-                <img class="card-img-top" src="../dist/assets/img/home/3.png" alt="">
-                <div class="card-body">
-                  <div class="media">
-                    <div class="media-left mr-3">
-                      <span class="m-top">20</span>
-                      <span class="m-bottom">ноября</span>
-                    </div>
-                    <div class="media-body">
-                      <h6 class="card-title">
-                        <a href="#">Мэр столицы Албек Ибраимов совершил объезд по строящимся объектам</a>
-                      </h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+
           </div>
         </div>
       </div>
     </div>
     <div class="section-title">
       <h5>Услуги</h5>
-      <a href="#" class="section-title-right">Все услуги</a>
+      <a [routerLink]="['/services']" class="section-title-right">Все услуги</a>
     </div>
     <div class="row newservice-service">
       <div class="col-md-4">
@@ -130,13 +97,13 @@
           <h6 class="card-title">Дом</h6>
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
-              <a href="#">Прием показаний счетчиков воды</a>
+              <a [routerLink]="['/services/sample']">Прием показаний счетчиков воды</a>
             </li>
             <li class="list-group-item">
-              <a href="#">Прием показаний света</a>
+              <a [routerLink]="['/services/sample']">Прием показаний света</a>
             </li>
             <li class="list-group-item">
-              <a href="#">Управление многоквартирным домом</a>
+              <a [routerLink]="['/services/sample']">Управление многоквартирным домом</a>
             </li>
           </ul>
         </div>
@@ -146,13 +113,13 @@
           <h6 class="card-title">Образование</h6>
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
-              <a href="#">Прием показаний счетчиков воды</a>
+              <a [routerLink]="['/services/sample']">Прием показаний счетчиков воды</a>
             </li>
             <li class="list-group-item">
-              <a href="#">Прием показаний света</a>
+              <a [routerLink]="['/services/sample']">Прием показаний света</a>
             </li>
             <li class="list-group-item">
-              <a href="#">Тазалык</a>
+              <a [routerLink]="['/services/sample']">Тазалык</a>
             </li>
           </ul>
         </div>
@@ -162,13 +129,13 @@
           <h6 class="card-title">Транспорт</h6>
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
-              <a href="#">Проект “Электронное билетирование”</a>
+              <a [routerLink]="['/services/sample']">Проект “Электронное билетирование”</a>
             </li>
             <li class="list-group-item">
-              <a href="#">Все транспортные маршруты г. Бишкек</a>
+              <a [routerLink]="['/services/sample']">Все транспортные маршруты г. Бишкек</a>
             </li>
             <li class="list-group-item">
-              <a href="#">Тазалык</a>
+              <a [routerLink]="['/services/sample']">Тарифы на городской транспорт</a>
             </li>
           </ul>
         </div>
@@ -178,13 +145,13 @@
           <h6 class="card-title">Социальная поддержка</h6>
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
-              <a href="#">Ваши предложения и обращения</a>
+              <a [routerLink]="['/services/sample']">Ваши предложения и обращения</a>
             </li>
             <li class="list-group-item">
-              <a href="#">Горячая линия - НЕТ коррупции</a>
+              <a [routerLink]="['/services/sample']">Горячая линия - НЕТ коррупции</a>
             </li>
             <li class="list-group-item">
-              <a href="#">Горячая линия службы оперативного реагирования мэрии г. Бишкек “185”</a>
+              <a [routerLink]="['/services/sample']">Горячая линия службы оперативного реагирования мэрии г. Бишкек “185”</a>
             </li>
           </ul>
         </div>
@@ -194,13 +161,13 @@
           <h6 class="card-title">Мои документы</h6>
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
-              <a href="#">Реестр объектов муниципальной собственности на имущество</a>
+              <a [routerLink]="['/services/sample']">Реестр объектов муниципальной собственности на имущество</a>
             </li>
             <li class="list-group-item">
-              <a href="#">Прием показаний света</a>
+              <a [routerLink]="['/services/sample']">Прием показаний света</a>
             </li>
             <li class="list-group-item">
-              <a href="#">Тазалык</a>
+              <a [routerLink]="['/services/sample']">Тазалык</a>
             </li>
           </ul>
         </div>
@@ -210,13 +177,13 @@
           <h6 class="card-title">Здоровье</h6>
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
-              <a href="#">Прием показаний счетчиков воды</a>
+              <a [routerLink]="['/services/sample']">Прием показаний счетчиков воды</a>
             </li>
             <li class="list-group-item">
-              <a href="#">Прием показаний света</a>
+              <a [routerLink]="['/services/sample']">Прием показаний света</a>
             </li>
             <li class="list-group-item">
-              <a href="#">Тазалык</a>
+              <a [routerLink]="['/services/sample']">Тазалык</a>
             </li>
           </ul>
         </div>

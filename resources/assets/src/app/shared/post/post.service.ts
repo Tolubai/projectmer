@@ -10,8 +10,12 @@ import { Posts } from "./post";
 @Injectable()
 export class PostService {
 
-  private headers = new Headers({'Content-Type': 'application/json'});
-  private postsUrl = 'http://laravel.test/api/posts'
+    private headers = new Headers({
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
+    });
+  private postsUrl = '//outlet.kg/posts.php';
 
   constructor( private http: Http) { }
 

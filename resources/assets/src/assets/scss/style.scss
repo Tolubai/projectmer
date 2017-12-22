@@ -327,6 +327,68 @@ video {
     }
 }
 
+.newspage{
+    background: #f7f8fb;
+    padding: 60px 0;
+
+    &-news{
+        padding-bottom: 30px;
+    }
+
+    .card{
+        background: none;
+        border: none;
+        border-radius: 0;
+
+        &-img-top{
+            border-radius: 0;
+        }
+
+        &-title{
+            color: #333;
+            font-family: $montserratmedium;
+            font-size: 11pt;
+        }
+        &-body{
+            padding: 0.25rem 0 1.25rem 0;
+
+            &-date{
+                font-size: 13px;
+                padding: 5px 0;
+                color: $boz;
+            }
+        }
+    }
+
+    &-service{
+
+        .card{
+            margin-bottom: 20px;
+            &-title{
+                font-family: $montserratmedium;
+                color: $blacktitle;
+            }
+            .list-group{
+                border: none;
+                outline: none;
+
+                &-item{
+                    background: none;
+                    border: none;
+                    padding: 0.25em 0;
+                    font-family: $montserratregular;
+                    a{
+                        &:hover {
+                        color: $yellow;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
 .medias{
     padding: 60px 0;
 
@@ -789,7 +851,7 @@ video {
     &-title{
         position: relative;
         border-bottom: 1px solid #ccc;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         padding-bottom: 5px;
 
         h5{
@@ -806,6 +868,20 @@ video {
             color: $main-color;
             margin-left: 15px;
             font-family: $montserratmedium;
+
+            &-links{
+                list-style-type: none;
+                display: inline-block;
+                margin: 0;
+                padding: 0;
+                li{
+                    display: inline-block;
+                }
+            }
+        }
+
+        &-date{
+            font-family: $montserratmedium;
         }
     }
     &-body{
@@ -813,17 +889,54 @@ video {
 
         article{
             text-align: justify;
-
-            border-bottom: 1px solid #ccc;
             padding-bottom: 5px;
+        }
+
+        &-video{
+            padding-bottom: 15px;
         }
     }
 
+    
     &-footer{
         font-family: $montserratregular;
-        .footer-bottom{
-            color: #555;
+        .footer{
+            &-top{
+                .tags{
+                    list-style-type: none;
+                    display: inline-block;
+                    margin: 0;
+                    padding: 0;
+                    
+                    caption{
+                        float: left;
+                        padding: 0;
+                        margin: 0 10px 0 0;
+                    }
+                    
+                    li{
+                        display: inline-block;
+
+                        a{
+                            color: $main-color;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+            &-bottom{
+                border-top: 1px solid #ccc;
+                color: #555;
+                margin-top: 10px;
+                padding-top: 15px;
+            }
         }
+    }
+
+    &-figure{
+        margin: 0 0 0.5rem;
     }
 }
 
@@ -832,6 +945,13 @@ video {
 @import '~@ngx-share/button/styles/variables';
 @import '~@ngx-share/button/styles/share-buttons';
 @import '~@ngx-share/button/styles/themes/outline/outline-theme';
+
+.sb-button{
+    margin: 0;
+    .sb-wrapper{
+        margin-right: 5px;
+    }
+}
 
 
 .sidebar{
@@ -842,7 +962,7 @@ video {
     {
         position: relative;
         border-bottom: 1px solid #ccc;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
         padding-bottom: 5px;
 
         h6
@@ -851,4 +971,117 @@ video {
             color: $blacktitle;
         }
     }
+
+    &-body{
+
+        &-links{
+            list-style-type: none;
+            margin: 0;
+            padding: 5px 0;
+            font-family: $montserratmedium;
+            
+            li>a{
+                color: $main-color;
+
+                &:hover{
+                    color: $link;
+                }
+            }
+        }
+    }
 }
+
+.category{
+    position: relative;
+    display: block;
+
+    &-title
+    {
+        position: relative;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+
+        h5
+        {
+            font-family: $montserratbold;
+            color: $blacktitle;
+        }
+    }
+
+    &-body{
+
+        &-links{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            font-family: $montserratmedium;
+            
+            
+            li{
+                border-bottom: 1px solid #eee;
+                a{
+                    color: $main-color;
+                    position: relative;
+                    display: block;
+                    padding: .35rem 0;
+                    font-size: 11pt;
+
+                    
+                    &:hover{
+                        color: $link;
+                    }
+                }
+
+                &:last-child{
+                    border-bottom: 1px solid transparent; 
+                }
+               
+            }
+                
+        }
+    }
+}
+
+.banner{
+    margin: 30px 0;
+}
+
+.table{
+    thead{
+        font-family: $montserratmedium;
+
+    }
+    .thead{
+
+        &-light{
+            th {
+                font-weight: normal;
+            }
+        }
+    }
+    tbody{
+        font-family: $montserratregular;
+    }
+
+    &-page{
+        background: #f7f8fb;
+    }
+}
+
+.pagination {
+    font-family: $montserratmedium;
+    .page-item{
+        border:none;
+        
+        .page-link{
+          border:none;
+           
+        }
+
+        &:last-child .page-link{
+            background: none;
+            color: $link;
+        }
+    }
+} 

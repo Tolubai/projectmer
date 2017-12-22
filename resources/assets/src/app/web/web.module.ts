@@ -6,6 +6,9 @@ import { PagesModule } from './pages/pages.module';
 import { HomeModule } from './home/home.module';
 import { ComponentsModule } from './components/components.module';
 import { NewsModule } from './news/news.module';
+import { ServicesModule } from './services/services.module';
+import { PhotosModule } from './photos/photos.module';
+import { VideosModule } from './videos/videos.module';
 
 @NgModule({
     imports: [
@@ -13,7 +16,10 @@ import { NewsModule } from './news/news.module';
         PagesModule,
         HomeModule,
         ComponentsModule,
-        NewsModule
+        NewsModule,
+        ServicesModule,
+        PhotosModule,
+        VideosModule
     ],
     declarations: [
         WebComponent

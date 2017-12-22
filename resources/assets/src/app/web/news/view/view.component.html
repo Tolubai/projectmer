@@ -5,45 +5,91 @@
         <figure class="article-figure">
           <img src="{{post.thumbnailM}}" class="figure-img img-fluid" alt="Описание картинки">
           <div class="article-info">
-              <span class="text-left align-self-center">19 Декабрь 2017</span>
-              <span class="article-info-cat">Транспорт</span>
+              <span class="article-info-date text-left align-self-center">19 Декабрь 2017</span>
+              <span class="article-info-cat float-right">
+                <ul class="article-info-cat-links">
+                  <li><a href="#">Транспорт</a></li>
+                </ul>  
+              </span>
               <!-- <figcaption class="figure-caption float-right">{{post.thumbdescRu}}</figcaption> -->
           </div>
         </figure>
         <div class="article-title">
-          <h5>{{post.titleRu}}</h5>
+          <h5>{{post.titleKg}}</h5>
         </div>
 
         <div class="article-body">
-          <article [innerHTML]="post.contentRu"></article>
+          <!-- <article [innerHTML]="post.contentRu"></article> -->
+          <article>
+            <p>Одним из ярких новогодних мероприятий нашей столицы обещает стать шествие Дедов Морозов и Снегурочек, которое проходит cегодня.
+              Глава столичного муниципалитета Иса Омуркулов в своем приветственном слове отметил, что Дед Мороз и Снегурочка являются
+              основными символами Нового Года!&nbsp;</p>
+            <p>"Стало доброй традицией проводить у нас в Бишкеке шествие Дедов Морозов и Снегурочек. Вы несете собой положительный заряд
+              праздника. Ваше присутствие радует глаз, украшает нашу жизнь и создает феерию новогоднего мероприятия. Дед Мороз и Снегурочка
+              возвращает людей старшего поколения в детство, а нашу детвору погружает в мир фантазии и сказки! Дед Мороз и Снегурочка
+              - являются проводниками уходящего и наступающего года. Вы являетесь олицетворением того, что новый 2011 год вступает в
+              свои права", - отметил мэр.
+              <br>
+              <br> Также градоначальник добавил, что сегодня Дед Морозы и Снегурочки наделены огромной миссией: "Вы задаете тон празднику
+              и создаете новогоднюю атмосферу. Думаю, что многие бишкекчане и гости столицы соберутся на центральной площади "Ала-Тоо"
+              возле главной елки страны, чтобы принять участие в развлекательном новогоднем мероприятии и получить от Вас сладкие подарки".
+              <br> В завершение своего выступления Иса Омуркулов пожелал участникам праздничного шествия доброго пути.
+              <br>
+              <br> Получив от главы столичного муниципалитета Исы Омуркулова целый мешок с подарками, колона направилась на центральную площадь
+              столицы к главной елке. Возглавляет шествие духовой оркестр в сопровождении барабанщиц. Общее количество Дед Морозов и
+              Снегурочек составит - 200 человек.
+              <br>
+              <br> В рамках новогоднего мероприятия на центральной площади состоится праздничный новогодний концерт с участием звезд кыргызской
+              эстрады, будут разыграны конкурсы. Во время шествия новогодние персонажи будут раздавать подарки детям и взрослым.
+              <br> На различные сладкие подарки в 2010 году с горбюджета было выделено 2,5 млн. сомов, всего же на празднование самого волшебного
+              праздника - Нового года мэрия города Бишкек выделила порядка 10 млн. сомов.
+            </p>
+          </article>
         </div>
         <div class="article-footer">
           <div class="row">
-            <div class="col">
+            <div class="col-sm-12">
+              <div class="footer-top">
+                <ul class="tags">
+                    <caption>Теги:</caption>
+                    <li><a href="#">ветераны</a>, </li>
+                    <li><a href="#">новый год</a>, </li>
+                    <li><a href="#">мэр</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-12">
               <div class="footer-bottom">
-                <div class="float-left d-flex" style="height: 40px">
-                  <div class="share align-self-center">
-                    <share-buttons [theme]="'outline'" [include]="['facebook','twitter','google','whatsapp','telegram','vk']" [show]="14"
-                      [showIcon]="false" [showText]="true">
-                    </share-buttons>
-                  </div>
-                </div>         
+                <div class="share">
+                  <share-buttons [theme]="'outline'" [include]="['facebook','twitter','google','vk', 'whatsapp','telegram']" [show]="6"
+                    [showIcon]="false" [showText]="true" [showCount]="true" [title]="post.titleKg" [description]="post.descKg" [image]="post.thumbnailS">
+                  </share-buttons>
+                </div>        
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <div class="col-sm-3">
         <aside class="sidebar">
-          <div class="sidebar-title">
-            <h6>Сайдбар</h6>
-          </div>
+          <!-- <div class="sidebar-title">
+            <h6>Ссылки</h6>
+          </div> -->
           <div class="sidebar-body">
-            <ul>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-            </ul>
+            <img src="../dist/assets/img/banner.png" alt="" class="img-fluid">
+            <!-- <ul class="sidebar-body-links">
+              <li><a href="#">Аппарат мэрии</a></li>
+              <li><a href="#">Административные районы</a></li>
+              <li><a href="#">Структурные подразделения и муниципальные предприятия</a></li>
+              <li><a href="#">Постановления</a></li>
+              <li><a href="#">Отчеты</a></li>
+              <li><a href="#">О столице</a></li>
+              <li><a href="#">Тарифы</a></li>
+            </ul> -->
+            <div class="banner">
+              <!-- <img src="../dist/assets/img/banner.png" alt="" class="img-fluid"> -->
+            </div>
           </div>
         </aside>
       </div>

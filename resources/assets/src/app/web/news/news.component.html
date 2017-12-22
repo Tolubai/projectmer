@@ -1,137 +1,118 @@
-<section id="section" class="section newservice clean">
+<section id="section" class="section newspage clean">
   <div class="container">
-    <div class="section-title">
-      <h5>Все новости</h5>
-    </div>
-    <div class="section-body">
-      <div class="row" *ngIf="posts.length">
-        <div class="col-md-4 col-sm-12" *ngFor="let post of posts">
-          <div class="card">
-            <img class="card-img-top" src="{{post.thumbnailS}}" alt="">
-            <div class="card-body">
-              <div class="media">
-                <div class="media-left mr-3">
-                  <span class="m-top">{{ post.created_at | date : "d" }}</span>
-                  <span class="m-bottom">{{ post.created_at | date : "MMMM" }}</span>
-                </div>
-                <div class="media-body">
-                  <h6 class="card-title">
-                    <a [routerLink]="['/news', post.id]">{{post.titleRu}}</a>
-                  </h6>
+    <div class="row">
+      <div class="col-sm-9">
+        <div class="section-title">
+          <h5>Все новости</h5>
+        </div>
+        <div class="section-body">
+          <div class="row" *ngIf="posts.length">
+            <div class="col-md-4 col-sm-12" *ngFor="let post of posts">
+              <div class="card">
+                <img class="card-img-top" src="{{post.thumbnailS}}" alt="">
+                <div class="card-body">
+                  <div class="card-body-date">19 Декабрь 2017</div>
+                  <div class="media">
+                    <div class="media-body">
+                      <h6 class="card-title">
+                        <a [routerLink]="['/news', post.id]">{{post.titleKg}}</a>
+                      </h6>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-md-4 col-sm-12">
-          <div class="card">
-            <img class="card-img-top" src="../assets/img/home/1.png" alt="">
-            <div class="card-body">
-              <div class="media">
-                <div class="media-left mr-3">
-                  <span class="m-top">20</span>
-                  <span class="m-bottom">ноября</span>
-                </div>
-                <div class="media-body">
-                  <h6 class="card-title">
-                    <a href="#">В МП «Зеленстрой» появилась техника для очистки ЗКДС</a>
-                  </h6>
+          <div class="row" *ngIf="posts.length">
+            <div class="col-md-4 col-sm-12" *ngFor="let post of posts">
+              <div class="card">
+                <img class="card-img-top" src="{{post.thumbnailS}}" alt="">
+                <div class="card-body">
+                  <div class="card-body-date">19 Декабрь 2017</div>
+                  <div class="media">
+                    <div class="media-body">
+                      <h6 class="card-title">
+                        <a [routerLink]="['/news', post.id]">{{post.titleKg}}</a>
+                      </h6>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+ 
         </div>
-        <div class="col-md-4 col-sm-12">
-          <div class="card">
-            <img class="card-img-top" src="../assets/img/home/2.png" alt="">
-            <div class="card-body">
-              <div class="media">
-                <div class="media-left mr-3">
-                  <span class="m-top">20</span>
-                  <span class="m-bottom">ноября</span>
-                </div>
-                <div class="media-body">
-                  <h6 class="card-title">
-                    <a href="#">Столичные школьники встретились с династией милиционеров в рамках проекта «Жаш карек»</a>
-                  </h6>
-                </div>
-              </div>
+        <div class="section-body-footer">
+          <nav>
+            <ul class="pagination pagination-sm justify-content-end">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Предыдущий</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">...</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">15</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">16</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">17</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">Следуюший</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <aside class="category">
+          <div class="category-title">
+            <h5>Категории</h5>
+          </div>
+          <div class="category-body">
+            <ul class="category-body-links">
+              <li><a href="#">Cфера</a></li>
+              <li><a href="#">Социальная сфера</a></li> 
+              <li><a href="#">Транспорт</a></li> 
+              <li><a href="#">Культура</a></li>
+              <li><a href="#">Строительство и реконструкция</a></li> 
+              <li><a href="#">Городское хозяйство</a></li> 
+              <li><a href="#">Спорт</a></li> 
+              <li><a href="#">Экология</a></li> 
+              <li><a href="#">Религия</a></li>
+              <li><a href="#">Семейная и молодёжная политика</a></li> 
+              <li><a href="#">Безопасность</a></li> 
+              <li><a href="#">Межрегиональные и международные связи</a></li>
+              <li><a href="#">Экономика и предпринимательство</a></li>
+              <li><a href="#">Туризм</a></li>
+              <li><a href="#">Наука и инновации</a></li>
+              <li><a href="#">Образование</a></li>
+              <li><a href="#">Городское управление</a></li>
+              <li><a href="#">Имущественно-земельные отношения</a></li>
+              <li><a href="#">Здравоохранение</a></li>
+              <li><a href="#">Парки и пешеходные зоны</a></li>
+              <li><a href="#">Погода</a></li>
+              <li><a href="#">Моя улица</a></li>
+              <li><a href="#">Новый год</a></li>
+              <li><a href="#">Технологии</a></li>
+            </ul>
+            <div class="banner">
+              <!-- <img src="../dist/assets/img/banner.png" alt="" class="img-fluid"> -->
             </div>
           </div>
-        </div>
-        <div class="col-md-4 col-sm-12">
-          <div class="card">
-            <img class="card-img-top" src="../assets/img/home/3.png" alt="">
-            <div class="card-body">
-              <div class="media">
-                <div class="media-left mr-3">
-                  <span class="m-top">20</span>
-                  <span class="m-bottom">ноября</span>
-                </div>
-                <div class="media-body">
-                  <h6 class="card-title">
-                    <a href="#">Мэр столицы Албек Ибраимов совершил объезд по строящимся объектам</a>
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-12">
-          <div class="card">
-            <img class="card-img-top" src="../assets/img/home/1.png" alt="">
-            <div class="card-body">
-              <div class="media">
-                <div class="media-left mr-3">
-                  <span class="m-top">20</span>
-                  <span class="m-bottom">ноября</span>
-                </div>
-                <div class="media-body">
-                  <h6 class="card-title">
-                    <a href="#">В МП «Зеленстрой» появилась техника для очистки ЗКДС</a>
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-12">
-          <div class="card">
-            <img class="card-img-top" src="../assets/img/home/2.png" alt="">
-            <div class="card-body">
-              <div class="media">
-                <div class="media-left mr-3">
-                  <span class="m-top">20</span>
-                  <span class="m-bottom">ноября</span>
-                </div>
-                <div class="media-body">
-                  <h6 class="card-title">
-                    <a href="#">Столичные школьники встретились с династией милиционеров в рамках проекта «Жаш карек»</a>
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-12">
-          <div class="card">
-            <img class="card-img-top" src="../assets/img/home/3.png" alt="">
-            <div class="card-body">
-              <div class="media">
-                <div class="media-left mr-3">
-                  <span class="m-top">20</span>
-                  <span class="m-bottom">ноября</span>
-                </div>
-                <div class="media-body">
-                  <h6 class="card-title">
-                    <a href="#">Мэр столицы Албек Ибраимов совершил объезд по строящимся объектам</a>
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        </aside>
       </div>
     </div>
   </div>

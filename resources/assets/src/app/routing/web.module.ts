@@ -3,17 +3,31 @@ import { ModuleWithProviders } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { WebComponent } from './../web/web.component';
+import { HomeComponent } from '../web/home/home.component';
+
 import { p404Component } from './../web/pages/404/404.component';
+import { VersionComponent } from '../web/pages/version/version.component';
+
 import { BashkaruuModule } from '../bashkaruu/bashkaruu.module';
 
-import { HomeComponent } from '../web/home/home.component';
 import { NewsModule } from '../web/news/news.module';
 import { ViewComponent } from '../web/news/view/view.component';
+
+import { ServicesModule } from '../web/services/services.module';
+
+import { PhotosModule } from '../web/photos/photos.module';
+import { VideosModule } from '../web/videos/videos.module';
+
 
 const routes: Routes = [
   {
     path: 'bashkaruu',
     loadChildren: () => BashkaruuModule
+  },
+  {
+    path: 'version',
+    component: VersionComponent,
+    data: { name: 'Версия для слабовидящих' },
   },
   {   
     path:'',
@@ -27,6 +41,18 @@ const routes: Routes = [
       {
         path: 'news',
         loadChildren: () => NewsModule
+      },
+      {
+        path: 'services',
+        loadChildren: () => ServicesModule
+      },
+      {
+        path: 'photos',
+        loadChildren: () => PhotosModule
+      },
+      {
+        path: 'videos',
+        loadChildren: () => VideosModule
       },
       {
         path: 'news/:id',
