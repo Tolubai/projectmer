@@ -22,6 +22,10 @@ export class NewsComponent implements OnInit {
     this.posts = [];
   }
 
+  ngAfterViewChecked() {
+    window.scrollTo(0, 0);
+  }
+
   ngOnInit() {
     this.postService.getPosts().subscribe(posts => this.posts = posts);
   }

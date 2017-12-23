@@ -13,6 +13,8 @@ export class ViewComponent implements OnInit {
 
   constructor() { }
 
+
+
   ngOnInit(): void{
 
     this.galleryOptions = [
@@ -20,7 +22,8 @@ export class ViewComponent implements OnInit {
         width: '100%',
         height: '600px',
         thumbnailsColumns: 5,
-        imageAnimation: 'slide'
+        imageAnimation: 'slide',
+        thumbnailsRemainingCount: true
       },
       // max-width 800
       {
@@ -69,8 +72,27 @@ export class ViewComponent implements OnInit {
         small: 'dist/assets/img/posts/6.png',
         medium: 'dist/assets/img/posts/6.png',
         big: 'dist/assets/img/posts/6.png'
+      },
+      {
+        small: 'dist/assets/img/posts/6.png',
+        medium: 'dist/assets/img/posts/6.png',
+        big: 'dist/assets/img/posts/6.png'
+      },
+      {
+        small: 'dist/assets/img/posts/6.png',
+        medium: 'dist/assets/img/posts/6.png',
+        big: 'dist/assets/img/posts/6.png'
+      },
+      {
+        small: 'dist/assets/img/posts/6.png',
+        medium: 'dist/assets/img/posts/6.png',
+        big: 'dist/assets/img/posts/6.png'
       }
     ];
+  }
+
+  ngAfterViewInit() {
+    window.scrollTo(0, 0);
   }
 
 }

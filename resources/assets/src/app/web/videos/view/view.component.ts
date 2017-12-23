@@ -12,4 +12,7 @@ export class ViewComponent implements OnInit {
   ngOnInit() {
   }
 
+  ngAfterViewInit() {
+    window.scrollTo(0, 0);
+  }
 }

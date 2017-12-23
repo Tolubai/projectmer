@@ -17,6 +17,7 @@ import { ServicesModule } from '../web/services/services.module';
 
 import { PhotosModule } from '../web/photos/photos.module';
 import { VideosModule } from '../web/videos/videos.module';
+import { ContactsComponent } from '../web/pages/contacts/contacts.component';
 
 
 const routes: Routes = [
@@ -57,6 +58,11 @@ const routes: Routes = [
       {
         path: 'news/:id',
         component: ViewComponent,
+      },
+      {
+        path: 'contacts',
+        component: ContactsComponent,
+        data: { name: 'Контакты' },
       },
       {
         path: '404',
