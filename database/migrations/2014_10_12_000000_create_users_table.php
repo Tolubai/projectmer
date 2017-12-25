@@ -13,11 +13,28 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
+        Schema::defaultStringLength(191);
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->string('password');
+
+            $table->string('login');
+            $table->string('email')->nullable();
+            $table->string('password', 60);
+
+            $table->string('firstnameKg')->nullable();
+            $table->string('firstnameRu')->nullable();
+            $table->string('firstnameEn')->nullable();
+
+            $table->string('lastnameKg')->nullable();
+            $table->string('lastnameRu')->nullable();
+            $table->string('lastnameEn')->nullable();
+            
+            $table->string('avatar')->nullable();
+            $table->string('sex')->nullable();
+
+            $table->boolean('active')->default(0);
+            $table->enum('role', ['user','moder','admin','super'])->nullable()->default('user');
+
             $table->rememberToken();
             $table->timestamps();
         });

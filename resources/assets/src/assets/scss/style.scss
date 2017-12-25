@@ -9,6 +9,13 @@
 
 body{
     font-family: $montserratregular;
+    padding: 0 !important;
+
+  &:before {
+      content: "";
+      position: relative !important;
+      background: transparent !important;
+  }
 }
 
 a:hover, a:focus, a:visited{
@@ -317,7 +324,7 @@ video {
                     font-family: $montserratregular;
                     a{
                         &:hover {
-                        color: $yellow;
+                        color: $main-color;
                         }
                     }
                 }
