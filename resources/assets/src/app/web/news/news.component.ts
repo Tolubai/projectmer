@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 import { Posts } from '../../shared/post/post';
 import { PostService } from '../../shared/post/post.service';
-import { Router } from '@angular/router';
 
 
 @Component({
@@ -18,11 +19,13 @@ export class NewsComponent implements OnInit {
 
   constructor(
     private postService: PostService,
-    private router: Router) { 
+    private router: Router,
+    private title: Title) { 
     this.posts = [];
   }
 
   ngAfterViewChecked() {
+    this.title.setTitle('Все новости');
     window.scrollTo(0, 0);
   }
 

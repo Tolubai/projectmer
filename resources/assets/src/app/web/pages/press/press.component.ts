@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'services-home',
-  templateUrl: './services.component.html',
-  styleUrls: ['./services.component.scss']
+  selector: 'press-app',
+  templateUrl: './press.component.html',
+  styleUrls: ['./press.component.scss']
 })
-export class ServicesComponent implements OnInit {
+export class PressComponent implements OnInit {
 
   constructor(
     private title: Title
@@ -16,7 +16,7 @@ export class ServicesComponent implements OnInit {
   }
 
   ngAfterViewChecked() {
-    this.title.setTitle('Услуги');
+    this.title.setTitle('История города');
     window.scrollTo(0, 0);
   }
 }

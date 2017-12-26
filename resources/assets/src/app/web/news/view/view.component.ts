@@ -19,6 +19,7 @@ export class ViewComponent implements OnInit {
   sub: Subscription;
   errorMessage = '';
   public href: string = "";
+  public postName: string = "";
 
   constructor(
     private postService: PostService,
@@ -27,7 +28,7 @@ export class ViewComponent implements OnInit {
     private meta: Meta,
     private title: Title
   ) { 
-    title.setTitle('Статья');
+
     meta.addTags([
       {
         name: 'author', content: 'meria.kg'
@@ -49,9 +50,9 @@ export class ViewComponent implements OnInit {
       let postID = +params['id'];
       this.postService.getPost(postID).subscribe(post => {
         this.post = post;
+        this.title.setTitle(this.post.titleKg);
       }, error => this.errorMessage = 'Could not load item comments.');
     });
-
     // Current url
     this.href = this.router.url;
 

@@ -1,5 +1,6 @@
 @import 'partials/all';
 
+
 $shadow: 0px 3px 8px rgba(69, 101, 173, 0.1);
 
 // Classes
@@ -64,5 +65,14 @@ $shadow: 0px 3px 8px rgba(69, 101, 173, 0.1);
     &-next{
         right: -30px;
         // background: url('./../img/elements/right-arrow.png');
+    }
+}
+
+
+.navbar-toggler-icon {
+    display: table-cell;
+    .fa-bars {
+        font-size: 16pt;
+        color: $main-color;
     }
 }

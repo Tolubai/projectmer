@@ -17,7 +17,11 @@ import { ServicesModule } from '../web/services/services.module';
 
 import { PhotosModule } from '../web/photos/photos.module';
 import { VideosModule } from '../web/videos/videos.module';
+import { StructureModule } from '../web/pages/structure/structure.module';
+
 import { ContactsComponent } from '../web/pages/contacts/contacts.component';
+import { AboutComponent } from '../web/pages/about/about.component';
+import { PressComponent } from '../web/pages/press/press.component';
 
 
 const routes: Routes = [
@@ -63,6 +67,18 @@ const routes: Routes = [
         path: 'contacts',
         component: ContactsComponent,
         data: { name: 'Контакты' },
+      },
+      {
+        path: 'structure',
+        loadChildren: () => StructureModule
+      },
+      {
+        path: 'about',
+        component: AboutComponent
+      },
+      {
+        path: 'press',
+        component: PressComponent
       },
       {
         path: '404',
