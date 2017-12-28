@@ -5,7 +5,7 @@
       <div class="menu-mobile menu-activated-on-click color-scheme-dark">
         <div class="mm-logo-buttons-w">
           <a class="mm-logo" [routerLink]="['/bashkaruu']">
-            <img src="../dist/assets/bashkaruu/img/logo.png">
+            <img src="/assets/bashkaruu/img/logo.png">
             <span>Башкаруу панели</span>
           </a>
           <div class="mm-buttons">
@@ -34,7 +34,7 @@
       <div class="desktop-menu menu-side-w menu-activated-on-click">
         <div class="logo-w">
           <a class="logo" [routerLink]="['/bashkaruu']">
-            <img src="../dist/assets/bashkaruu/img/logo.png">
+            <img src="/assets/bashkaruu/img/logo.png">
             <span>Башкаруу панели</span>
           </a>
         </div>
@@ -63,33 +63,21 @@
                 </div>
                 <ul>
                   <li>
-                    <a href="apps_email.html">
-                      <i class="os-icon os-icon-mail-01"></i>
-                      <span>Incoming Mail</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="users_profile_big.html">
-                      <i class="os-icon os-icon-user-male-circle2"></i>
-                      <span>Profile Details</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="users_profile_small.html">
-                      <i class="os-icon os-icon-coins-4"></i>
-                      <span>Billing Details</span>
-                    </a>
-                  </li>
-                  <li>
                     <a href="#">
-                      <i class="os-icon os-icon-others-43"></i>
-                      <span>Notifications</span>
+                      <i class="os-icon os-icon-mail-01"></i>
+                      <span>Каттар</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a [routerLink]="['profile', id]">
+                      <i class="os-icon os-icon-user-male-circle2"></i>
+                      <span>Профиль</span>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <i class="os-icon os-icon-signs-11"></i>
-                      <span>Logout</span>
+                      <span>Чыгуу</span>
                     </a>
                   </li>
                 </ul>
@@ -103,7 +91,7 @@
       <div class="content-w">
         <div class="content-panel-toggler">
           <i class="os-icon os-icon-grid-squares-22"></i>
-          <span>Sidebar</span>
+          <span>Сайдбар</span>
         </div>
         <router-outlet></router-outlet> 
       </div>

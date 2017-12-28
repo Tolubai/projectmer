@@ -1,3 +1,158 @@
-<p>
-  profile works!
-</p>
+<div class="content-box">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="user-profile compact">
+        <div class="up-head-w" [ngStyle]="{ 'background-image': 'url(' + user.avatar + ')'}">
+          <div class="up-main-info">
+          </div>
+          <svg class="decor" width="842px" height="219px" viewBox="0 0 842 219" preserveAspectRatio="xMaxYMax meet" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g transform="translate(-381.000000, -362.000000)" fill="#FFFFFF">
+              <path class="decor-path" d="M1223,362 L1223,581 L381,581 C868.912802,575.666667 1149.57947,502.666667 1223,362 Z"></path>
+            </g>
+          </svg>
+        </div>
+        <div class="up-contents">
+          <div class="m-b">
+            <div class="up-main-info user-info">
+              <h2 class="up-header">{{user.firstnameKg}} {{user.lastnameKg}}</h2>
+              <h6 class="up-sub-header">{{user.email}}</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="element-wrapper">
+        <div class="element-box">
+          <h6 class="element-header">Акыркы аракеттер</h6>
+          <div class="timed-activities compact">
+            <div class="timed-activity">
+              <div class="ta-date">
+                <span>07-Ноябрь 2017</span>
+              </div>
+              <div class="ta-record-w">
+                <div class="ta-record">
+                  <div class="ta-timestamp">20-20-40</div>
+                </div>
+                <div class="ta-record">
+                  <div class="ta-timestamp">18-59-31</div>
+                </div>
+                <div class="ta-record">
+                  <div class="ta-timestamp">18-21-22</div>
+                </div>
+                <div class="ta-record">
+                  <div class="ta-timestamp">18-20-07</div>
+                </div>
+              </div>
+            </div>
+            <div class="timed-activity">
+              <div class="ta-date">
+                <span>06-Ноябрь 2017</span>
+              </div>
+              <div class="ta-record-w">
+                <div class="ta-record">
+                  <div class="ta-timestamp">21-14-39</div>
+                </div>
+                <div class="ta-record">
+                  <div class="ta-timestamp">16-11-26</div>
+                </div>
+                <div class="ta-record">
+                  <div class="ta-timestamp">12-19-55</div>
+                </div>
+                <div class="ta-record">
+                  <div class="ta-timestamp">12-05-51</div>
+                </div>
+              </div>
+            </div>
+            <div class="pt-btn">
+              <a class="btn btn-success btn-sm" href="#">Толук көрүү</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-8">
+      <div class="element-wrapper">
+        <div class="element-box">
+          <form id="formValidate" novalidate="true">
+            <div class="element-info">
+              <div class="element-info-with-icon">
+                <div class="element-info-icon">
+                  <div class="os-icon os-icon-wallet-loaded"></div>
+                </div>
+                <div class="element-info-text">
+                  <h5 class="element-inner-header">Профиль оңдоолору</h5>
+                </div>
+              </div>
+            </div>
+            <fieldset class="form-group">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="">Ысым</label>
+                    <input class="form-control" data-error="Please input your First Name" placeholder="Ысымыңыз" required="required" type="text" value="{{user.firstnameKg}}">
+                    <div class="help-block form-text with-errors form-control-feedback"></div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="">Фамилия</label>
+                    <input class="form-control" data-error="Please input your Last Name" placeholder="Фамилия" required="required" type="text" value="{{user.lastnameKg}}">
+                    <div class="help-block form-text with-errors form-control-feedback"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="">Катталган күн</label>
+                    <input class="single-daterange form-control " disabled placeholder="Date of birth" type="text" value="{{user.created_at}}">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="">Логин</label>
+                    <input class="form-control" placeholder="Логин" type="text" value="{{user.login}}">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="">Email дарек</label>
+                    <input class="form-control" data-error="Your email address is invalid" placeholder="Enter email" required="required" type="email" value="{{user.email}}">
+                    <div class="help-block form-text with-errors form-control-feedback"></div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <div class="row">
+              <div class="col-sm-12">
+                <legend><span>Сырсөздү алмаштыруу</span></legend>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for=""> Сырсөз</label>
+                  <input class="form-control" data-minlength="6" placeholder="Password" required="required"
+                    type="password">
+                  <div class="help-block form-text text-muted form-control-feedback">Минимум 6 символ</div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="">Сырсөздү кайталоо</label>
+                  <input class="form-control" data-match-error="Passwords don't match" placeholder="Confirm Password"
+                    required="required" type="password">
+                  <div class="help-block form-text with-errors form-control-feedback"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-buttons-w">
+              <button class="btn btn-primary disabled" type="submit"> Сактоо</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

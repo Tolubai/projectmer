@@ -12,6 +12,7 @@ export class BashkaruuComponent implements OnInit {
   user: string;
   role: string;
   avatar: string;
+  id: number;
 
   constructor(
     private auth: AuthService
@@ -31,6 +32,7 @@ export class BashkaruuComponent implements OnInit {
         this.user = user.json().data.firstnameKg +' '+ user.json().data.lastnameKg;
         this.role = user.json().data.role;
         this.avatar = user.json().data.avatar;
+        this.id = user.json().data.id;
         console.log(user.json())
         // console.log(this.user)
         // console.log(this.email)

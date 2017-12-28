@@ -13,6 +13,7 @@ import { LoginRedirect } from './../services/login-redirect.service';
 
 import { UsersModule } from '../bashkaruu/users/users.module';
 import { ProfileModule } from '../bashkaruu/profile/profile.module';
+import { ProfileComponent } from '../bashkaruu/profile/profile.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,10 @@ const routes: Routes = [
       {
         path: 'profile',
         loadChildren: () => ProfileModule
+      },
+      {
+        path: 'profile/:id',
+        component: ProfileComponent,
       },
       {
         path: 'status',

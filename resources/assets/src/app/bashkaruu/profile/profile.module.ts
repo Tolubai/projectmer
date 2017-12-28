@@ -8,6 +8,8 @@ import { FormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile.component';
 import { ProfileRoutingModule } from './profile.routing';
 
+import { UserService } from '../../shared/user/user.service';
+
 @NgModule({
   imports: [
     ProfileRoutingModule,
@@ -17,6 +19,9 @@ import { ProfileRoutingModule } from './profile.routing';
   ],
   declarations: [
     ProfileComponent,
+  ],
+  providers: [
+    UserService
   ]
 })
 

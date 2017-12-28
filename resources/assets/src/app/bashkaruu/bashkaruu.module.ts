@@ -9,12 +9,14 @@ import { AuthService } from './../services/auth.service';
 import { EnsureAuthenticated } from './../services/ensure-authenticated.service';
 import { LoginRedirect } from './../services/login-redirect.service';
 import { PartialsModule } from './partials/partials.module';
+import { ProfileModule } from './profile/profile.module';
 
 @NgModule({
   imports: [
     BashkaruuRoutingModule,
     PagesModule,
     PartialsModule,
+    ProfileModule
   ],
   declarations: [
     BashkaruuComponent

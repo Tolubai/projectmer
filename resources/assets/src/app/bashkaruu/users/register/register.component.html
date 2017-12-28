@@ -1,30 +1,49 @@
-<div class="row">
-  <div class="col-sm-12">
-    <div class="element-wrapper">
-      <h6 class="element-header">Жаңы колдонуучу каттоо</h6>
-      <div class="element-box reg-box-w">
-        <form (ngSubmit)="onRegister()" novalidate>
-          <div class="form-group">
-            <label for="">Аты жөнү</label>
-            <input type="text" class="form-control" id="username" [(ngModel)]="user.name" name="username"
-              required>
-            <div class="pre-icon os-icon os-icon-user-male-circle"></div>
+<div class="with-side-panel">
+  <div class="content-i">
+    <div class="content-box">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="element-wrapper">
+            <h6 class="element-header">Бардык колдонуучулар</h6>
+            <div class="element-box reg-box-w">
+              <form (ngSubmit)="onRegister()" novalidate>
+                <div class="form-group">
+                  <label for="">Аты жөнү</label>
+                  <input type="text" class="form-control" id="username" [(ngModel)]="user.name" name="username" required>
+                  <div class="pre-icon os-icon os-icon-user-male-circle"></div>
+                </div>
+                <div class="form-group">
+                  <label for="">Email</label>
+                  <input type="text" class="form-control" id="email" [(ngModel)]="user.email" name="email" required>
+                  <div class="pre-icon os-icon os-icon-email-2-at2"></div>
+                </div>
+                <div class="form-group">
+                  <label for="">Сырсөз</label>
+                  <input type="password" class="form-control" id="password" [(ngModel)]="user.password" name="password" required>
+                  <div class="pre-icon os-icon os-icon-fingerprint"></div>
+                </div>
+                <div class="buttons-w">
+                  <button type="submit" class="btn btn-primary">Каттоо</button>
+                </div>
+              </form>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="">Email</label>
-            <input type="text" class="form-control" id="email" [(ngModel)]="user.email" name="email" required>
-            <div class="pre-icon os-icon os-icon-email-2-at2"></div>
+        </div>
+      </div>
+    </div>
+    <div class="content-panel">
+      <div class="content-panel-close">
+        <i class="os-icon os-icon-close"></i>
+      </div>
+      <div class="element-wrapper">
+        <h6 class="element-header">Аракет</h6>
+        <div class="element-box-tp">
+          <div class="el-buttons-list full-width">
+            <a class="btn btn-default" [routerLink]="['/bashkaruu/users/register']">
+              <span>Жаңы колдонуучу</span>
+            </a>
           </div>
-          <div class="form-group">
-            <label for="">Сырсөз</label>
-            <input type="password" class="form-control" id="password" [(ngModel)]="user.password" name="password"
-              required>
-            <div class="pre-icon os-icon os-icon-fingerprint"></div>
-          </div>
-          <div class="buttons-w">
-            <button type="submit" class="btn btn-primary">Каттоо</button>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
   </div>

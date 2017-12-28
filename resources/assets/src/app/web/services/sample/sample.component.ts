@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'services-sample',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SampleComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private title: Title
+  ) { }
 
   ngOnInit() {
+  }
+
+  ngAfterViewChecked() {
+    this.title.setTitle('Тарифы на городской транспорт');
+    window.scrollTo(0, 0);
   }
 
 }

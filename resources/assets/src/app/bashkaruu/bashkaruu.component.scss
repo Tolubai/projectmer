@@ -2408,7 +2408,7 @@ pre {
   &:focus {
     color: #464a4c;
     background-color: #fff;
-    border-color: #023d7b;
+    // border-color: #023d7b;
     outline: none;
   }
   &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder {
@@ -10209,6 +10209,18 @@ body .daterangepicker {
       }
     }
   }
+  .user-info{
+    padding-top:10% !important;
+
+    .up-header{
+      color: #047bf8;
+      text-shadow: none;
+    }
+    .up-sub-header{
+      color: #555; 
+      text-shadow: none;
+    }
+  }
   .up-header {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
     color: #fff;
@@ -10247,7 +10259,7 @@ body .daterangepicker {
       padding-top: 0px;
     }
     .up-main-info {
-      padding-top: 35%;
+      padding-top: 100%;
     }
     .up-head-w .up-social a {
       font-size: 20px;
@@ -10450,7 +10462,6 @@ b, strong {
 
 .with-side-panel {
   .content-box {
-    display: table-cell;
   }
   .content-i {
     display: table;
