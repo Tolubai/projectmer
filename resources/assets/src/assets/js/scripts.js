@@ -224,7 +224,6 @@ jQuery(document).ready(function ($) {
     })
 
     // Navbar
-
     $(window).scroll(function () {
         if ($(".navbar").offset().top > 250) {
             $(".fixed-top").addClass("fixed-collapse");
@@ -232,4 +231,14 @@ jQuery(document).ready(function ($) {
             $(".fixed-top").removeClass("fixed-collapse");
         }
     });
+
+    $(".search-toggle").click(function () {
+        $(".navbar-collapse").addClass("search-show");
+        $(".form-search").addClass("visible");
+    });
+    $(".close-search").click(function () {
+        $(".navbar-collapse").removeClass("search-show");
+        $(".form-search").removeClass("visible");
+    });
+
 });

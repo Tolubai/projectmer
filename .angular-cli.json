@@ -9,7 +9,13 @@
       "outDir": "public/dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "favicon.ico",
+        {
+          "glob": "**/*",
+          "input": "./assets/img",
+          "output": "../assets/img",
+          "allowOutsideOutDir": true
+        }
       ],
       "viewInclude": "resources/views/welcome.blade.php",
       "index": "index.html",

@@ -70,9 +70,110 @@ $shadow: 0px 3px 8px rgba(69, 101, 173, 0.1);
 
 
 .navbar-toggler-icon {
-    display: table-cell;
     .fa-bars {
         font-size: 16pt;
         color: $main-color;
+    }
+}
+
+.search-block{
+    position: relative;
+    display: block;
+    cursor: pointer;
+
+    .search-toggle {
+        top: 5px;
+        cursor: pointer;
+        padding: 0 !important;
+        font-size: 18px;
+    }
+
+    .search-toggle:hover {
+        color: $main-color !important;
+    }
+
+    .search-toggle:after {
+        background: none !important;
+    }
+
+    .seacrh-block.search-show .search-toggle {
+        opacity: 0;
+    }
+
+    .form-search {
+        position: absolute;
+        right: 0;
+        z-index: 3;
+        display: none;
+        -webkit-transition: width 0.3s;
+        -moz-transition: width 0.3s;
+        transition: width 0.3s;
+        -webkit-backface-visibility: hidden;
+
+        &.visible {
+            display: block;
+            top: -5px;
+            width: 350px !important;
+            -webkit-transition: width 0.3s;
+            -moz-transition: width 0.3s;
+            transition: width 0.3s;
+            -webkit-backface-visibility: hidden;
+        }
+
+        input {
+            width: 100%;
+            box-shadow: 0px 3px 8px rgba(69, 101, 173, 0.1);
+            border-radius: 2px;
+            color: #6b6a6a;
+            border: none;
+            line-height: 2rem;
+            white-space: normal;
+            font-size: 14px;
+            font-weight: normal;
+            outline: none;
+            padding: 0 10px;
+
+            &::-webkit-input-placeholder {
+                color: $boz;
+            }
+
+            &::-moz-placeholder {
+                color: $boz;
+            }
+
+            &:-ms-input-placeholder {
+                color: $boz;
+            }
+
+            &::placeholder {
+                color: $boz;
+            }
+        }
+
+        .btn {
+            border: none;
+            width: 30px;
+            color: #929ca5;
+        }
+
+        .close-search {
+            position: absolute;
+            top: 5px;
+            right: 0;
+            padding: 0;
+        }
+
+        .submit-search {
+            position: absolute;
+            top: 5px;
+            right: 25px;
+            padding: 0;
+            background: none;
+        }
+
+        .btn:active {
+            box-shadow: none;
+            -webkit-box-shadow: none;
+        }
     }
 }

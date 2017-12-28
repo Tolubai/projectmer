@@ -152,7 +152,6 @@ video {
                     }
                 }
                 &-version{
-                    padding-top: 3px;
 
                     a{
                         color: $green;
@@ -171,6 +170,17 @@ video {
                 }
             }
 
+        }
+
+        &-toggler {
+            outline: none;
+
+            &:link,
+            &:visited,
+            &:hover,
+            &:focus {
+                outline: none;
+            }
         }
 
     }
@@ -214,6 +224,10 @@ video {
     .navbar-social .nav-link{
         color: $main-color;
 
+    }
+
+    .search-toggle{
+        color: $main-color !important;
     }
 }
 
